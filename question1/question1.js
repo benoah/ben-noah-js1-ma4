@@ -6,18 +6,42 @@ Show/hide the error message every time the validation runs.*/
 
 // Let's get the input by its id:
 
-function check(inputText, minText, maxLength){
-    let field = inputText.value;
-    let minTxt = minText;
-    let maxTxt = maxLength;
+const form = document.querySelector("#contactForm");
+form.addEventListener("submit", validateForm);
 
-    if(field.length < minTxt || field.length > maxTxt)
-    {
-        alert("Please input the userid between " +minTxt+ " and " +maxTxt+ " characters");
-        return false;
-    } 
-    else{
-        alert('Your userid have accepted.');
-return true;
+function validateForm(event){
+    event.preventDefault();
+    //console.log("The form was submitted");
+
+    const firstName = document.querySelector("#firstName");
+    const  firstNameError = document.querySelector("#firstNameError");
+    const  firstNameValue = firstName.value;
+
+    if (checkInput(firstNameValue) === true){
+        firstNameError.style.display = "none";
+    } else {
+        firstNameError.style.display = "block";
     }
 }
+
+function checkInput(value){
+    const trimmedValue = value.trim();
+
+    if(trimmedValue.length > 2){
+        return true;
+    }else {
+        return false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
