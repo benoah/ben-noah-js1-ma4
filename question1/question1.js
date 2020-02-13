@@ -27,12 +27,18 @@ function validateForm(event){
 function checkInput(value){
     const trimmedValue = value.trim();
 
-    if(trimmedValue.length > 2){
+    if(trimmedValue.length >= 2){
         return true;
     }else {
         return false;
     }
 }
+
+
+
+
+
+
 
 
 
