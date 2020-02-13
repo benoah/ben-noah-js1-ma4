@@ -16,7 +16,7 @@ Replace the placeholder values with the relevant properties from each object:
 
 const createGames = "https://api.rawg.io/api/games";
 
-fetch(creatorsUrl)
+fetch(createGames)
     .then(function(response) {
         return response.json();
     })
@@ -26,5 +26,7 @@ fetch(creatorsUrl)
     .catch(function(error) {
         console.log(error);
     });
+
+    
 
 
