@@ -7,6 +7,7 @@ Show/hide the error message every time the validation runs.*/
 // Let's get the input by its id:
 
 const form = document.querySelector("#contactForm");
+
 form.addEventListener("submit", validateForm);
 
 function validateForm(event){
@@ -33,6 +34,7 @@ function checkInput(value){
         return false;
     }
 }
+
 
 
 
