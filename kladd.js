@@ -45,7 +45,7 @@ function createGameDetails(json) {
 
 
 
-\   ^__^
+  ^__^
          \  (oo)\_______
             (__)\       )\/\
                 ||----w |
@@ -87,18 +87,3 @@ function createCreator(json) {
 }
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
